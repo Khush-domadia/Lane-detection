@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../static/adminResources/image/favicon.ico">
+
+    <title>Add Detection</title>
+
+    <!-- Bootstrap 4.0-->
+    <link rel="stylesheet"
+          href="../../static/adminResources/css/bootstrap.min.css">
+
+    <!-- Bootstrap extend-->
+    <link rel="stylesheet"
+          href="../../static/adminResources/css/bootstrap-extend.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet"
+          href="../../static/adminResources/css/master_style.css">
+
+    <!-- AIUI Admin skins -->
+    <link rel="stylesheet"
+          href="../../static/adminResources/css/_all-skins.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="hold-transition skin-black light-sidebar sidebar-mini">
+<div class="wrapper">
+
+
+    {% include 'admin/header.html' %}
+
+
+    {% include 'admin/menu.html' %}
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header d-none d-md-block">
+            <div class="d-flex align-items-center">
+                <div class="mr-auto">
+                    <h3 class="page-title br-0">Add Detection</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Basic Forms -->
+                    <div class="box">
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col">
+                                    <form action="/admin/addDetection"
+                                          method="post"
+                                          enctype="multipart/form-data">
+
+                                        <input type="file" id="myFile"
+                                               name="filename">
+
+
+                                        <br><br>
+                                        <div class="text-xs-right">
+                                            <button type="submit"
+                                                    class="btn btn-info">Add
+                                                Detection
+                                            </button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+
+</div>
+<!-- ./wrapper -->
+
+</script>
+
+</body>
+</html>
